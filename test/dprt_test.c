@@ -1,8 +1,8 @@
 /* dprt_test.c
-** $Header: /space/home/eng/cjm/cvs/libdprt-frodospec/test/dprt_test.c,v 1.1 2005-03-11 11:56:56 cjm Exp $
+** $Header: /space/home/eng/cjm/cvs/libdprt-frodospec/test/dprt_test.c,v 1.2 2008-07-17 10:49:33 cjm Exp $
 */
 /**
- * dprt_test.c Tests libdprt_ftspec, the Data Pipeline Real Time
+ * dprt_test.c Tests libdprt_frodospec, the Data Pipeline Real Time
  * reduction library. Note you cannot check Aborting reductions with this software at the moment.
  * <pre>
  * dprt_test [-b][-c][-e][-f][-help] <filename>
@@ -10,7 +10,7 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
-#include <strings.h>
+#include <string.h>
 #include "dprt.h"
 #include "dprt_jni_general.h"
 
@@ -46,7 +46,7 @@ static int Parse_Args(int argc,char *argv[]);
 /**
  * Revision Control System identifier.
  */
-static char rcsid[] = "$Id: dprt_test.c,v 1.1 2005-03-11 11:56:56 cjm Exp $";
+static char rcsid[] = "$Id: dprt_test.c,v 1.2 2008-07-17 10:49:33 cjm Exp $";
 /**
  * Filename of file to be processed.
  */
@@ -221,7 +221,7 @@ static int Parse_Args(int argc,char *argv[])
  */
 static void Help(void)
 {
-	fprintf(stdout,"dprt_test Tests the reduction routines in libdprt_ftspec.\n");
+	fprintf(stdout,"dprt_test Tests the reduction routines in libdprt_frodospec.\n");
 	fprintf(stdout,"dprt_test does NOT test the Java JNI interface or aborting reductions.\n");
 	fprintf(stdout,"dprt_test [-b] [-c] [-e] [-f] [-help] <filename>\n");
 	fprintf(stdout,"-b creates a master bias frame from biases in the directory specified in filename.\n");
@@ -233,6 +233,9 @@ static void Help(void)
 }
 /*
 ** $Log: not supported by cvs2svn $
+** Revision 1.1  2005/03/11 11:56:56  cjm
+** Initial revision
+**
 */
 
 
